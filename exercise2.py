@@ -13,6 +13,15 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
+ #For a given number of sides in a regular polygon, returns the shape name
+
+#Inputs: number of sides of object (user input)
+
+#Expected Outputs: str stating input and shape name derived from input
+
+#Errors: if input: >3-10<, not an integer, no entry at all - produce error message and reprompt
+
+
 shapes = ["nothing", "point", "line", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
 
 def name_that_shape():
@@ -29,17 +38,7 @@ def name_that_shape():
             print ("Error! That is too many sides. Your shape must have less than 10 sides.")
             continue
         else:
-            print "Your shape has %d sides! It is a %s." %(shape_sides, shapes[shape_sides])
+            print "Since your shape has %d sides, it is a %s!" %(shape_sides, shapes[shape_sides])
             break
 
 name_that_shape()
-
- #For a given number of sides in a regular polygon, returns the shape name
-
-#Inputs: number of sides of object (user input)
-
-#Expected Outputs: str from input (name of object)
-
-#Errors: if input >3-10<, produce error message
-
-
