@@ -14,26 +14,36 @@ __license__ = "MIT License"
 
 
 def name_that_shape():
+    shape_sides = input("How many sides does your shape have? ")
+    shape_sides = int(shape_sides)
+    if shape_sides == 3:
+        print("That is a triangle")
+    elif shape_sides == 4:
+        print ("That is a rectangle")
+    elif shape_sides == 5:
+        print ("That is a pentagon")
+    elif shape_sides == 6:
+        print ("That is a hexagon")
+    elif shape_sides == 7:
+        print ("That is a septagon")
+    elif shape_sides == 8:
+        print ("That is a octogon")
+    elif shape_sides == 9:
+        print ("That is a nonagon")
+    elif shape_sides == 10:
+        print ("That is a decagon")
+    else:
+        print ("Error")
+
     """
     For a given number of sides in a regular polygon, returns the shape name
 
     Inputs: number of sides of object (user input)
 
-    Expected Outputs: str from input
-    3 = triangle
-    4 = quadrangle
-    5 = pentagon
-    6 = hexagon
-    7 = septagon
-    8 = octogon
-    9 = nonagon
-    10 = decagon
+    Expected Outputs: str from input (name of object)
 
     Errors: if input >3-10<, produce error message
 
     """
-
-    print("Error")
-
 
 name_that_shape()
