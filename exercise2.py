@@ -22,20 +22,14 @@ def name_that_shape():
         except ValueError:
             print ("Sorry, I didn't catch that. Please enter a number.")
             continue
-        if shape_sides < 0:
-            print ("Error! A shape cannot have negative sides. A shape must have at least three sides.")
-            continue
-        elif shape_sides == 0:
-            print("Error! That is no sides at all. Your shapes must have at least 3 sides.")
-            continue
-        elif 1 <= shape_sides < 3:
-            print ("Error! That is not enough sides. Your shape must have at least 3 sides.")
+        if shape_sides < 3:
+            print ("Error! That would not make a shape. A shape must have at least three sides.")
             continue
         elif 10 < shape_sides:
             print ("Error! That is too many sides. Your shape must have less than 10 sides.")
             continue
         else:
-            print "Your shape has %d sides! That is a %s." %(shape_sides, shapes[shape_sides])
+            print "Your shape has %d sides! It is a %s." %(shape_sides, shapes[shape_sides])
             break
 
 name_that_shape()
