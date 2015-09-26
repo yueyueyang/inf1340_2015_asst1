@@ -22,7 +22,7 @@ __license__ = "MIT License"
 #Errors: if input: >3-10<, not an integer, no entry at all - produce error message and reprompt
 
 
-shapes = ["nothing", "point", "line", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
+shapes = ["point", "line", "open", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
 
 def name_that_shape():
     while True:
