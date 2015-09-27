@@ -53,9 +53,8 @@ def diagnose_car():
                             print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
                             continue
                     elif start_die == "no":
-                        print("It sounds like your enginge does not start up.")
-                        print("We should double check the answers to your previous questions. Let's start again.")
-                        continue
+                        print("Engine is not getting enough fuel. Clean fuel pump.")
+                        break
                     else:
                         print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
                         continue
