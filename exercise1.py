@@ -26,17 +26,9 @@ percentage_of_commission = 0.03
 # Assign the result to commission.
 commission = shares * price * percentage_of_commission
 
-# Display the commission.
-print('The amount of commission is')
-print(commission)
-
 # Calculate the total pay by multiplying shares and price and then add commission.
 # Assign the result to total pay.
 total_pay = shares * price + commission
-
-# Display the total pay.
-print('The total pay for the stock is')
-print(total_pay)
 
 # Assign a value to the sold price.
 sold_price = 942.75
@@ -45,27 +37,15 @@ sold_price = 942.75
 # Assign the result to amount received from the stock.
 amount_received_from_the_stock = shares * sold_price
 
-# Display the amount received from the stock.
-print('The amount received from the stock is')
-print(amount_received_from_the_stock)
-
 # Calculate the amount of the commission after selling the stock by multiplying percentage of commission
 # and amount received from the stock.
 # Assign the result to commission after selling the stock.
 commission_after_selling_the_stock = percentage_of_commission * amount_received_from_the_stock
 
-# Display the commission after selling the stock.
-print('The commission after selling the stock is')
-print(commission_after_selling_the_stock)
-
 # Calculate the total money left by subtracting the commission after selling the stock
 # from the amount received from the stock.
 # Assign the result to money left.
 money_left = amount_received_from_the_stock - commission_after_selling_the_stock
-
-# Display the amount of money left after paying the commission.
-print('The amount of money left after paying the commission')
-print(money_left)
 
 # Calculate the money remaining after the stock transaction by subtracting the total pay for the stock
 # from the amount of money left.
