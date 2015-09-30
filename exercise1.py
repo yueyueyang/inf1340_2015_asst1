@@ -53,12 +53,10 @@ money_left = amount_received_from_the_stock - commission_after_selling_the_stock
 money_remaining_after_stock_transactions = money_left - total_pay
 
 # Display the profit or loss.
-print('Money remaining after the stock transaction is')
-print(money_remaining_after_stock_transactions)
+print('Money remaining after the stock transaction is $%d') %money_remaining_after_stock_transactions
 
 # Display the loss.
-print('Because money remaining is negative, so Lakshmi has a loss')
-print(money_remaining_after_stock_transactions)
+print('Because money remaining is negative, so Lakshmi has a loss $%d')%money_remaining_after_stock_transactions
 
 
 
