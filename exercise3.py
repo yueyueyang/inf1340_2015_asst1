@@ -25,6 +25,7 @@ __license__ = "MIT License"
 
     #STILL NEED TEST CASES
 
+
 def diagnose_car():
     print("We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:")
     raw_input("Please press the Enter/Return key when you are ready to begin.")

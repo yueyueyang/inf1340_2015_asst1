@@ -17,6 +17,7 @@ __license__ = "MIT License"
 
 #STILL NEED TEST CASES
 
+
 shares = 2000
 price = 900
 percentage_of_commission = 0.03
