@@ -12,6 +12,18 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+    #This program helps identify a problem with a car based on yes/now interactive queries
+
+    #Inputs: str, 'yes' or 'no'
+    #Expected Outputs: str, possible problem with car and instructions
+    #Errors: if input not 'yes' or 'no', tell user it is incorrect and prompt for new, correct, answer
+
+    #YUE: THIS IS WHAT I THINK WE STILL NEED TO PUT IN:
+    #y/n as option
+    #better output messages
+    #continue loops back to beginning - make it loop make to sub question?
+
+    #STILL NEED TEST CASES
 
 def diagnose_car():
     print("We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:")
@@ -67,22 +79,5 @@ def diagnose_car():
         else:
             print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
             continue
-
-
-    """
-    Interactively queries the user with yes/no questions to identify a
-    possible issue with a car.
-
-    Inputs:
-
-    Expected Outputs:
-
-    Errors:
-
-    """
-
-    #y/n as option
-    #better output messages
-    #continue loops back to beginning - make it loop make to sub question?
 
 diagnose_car()

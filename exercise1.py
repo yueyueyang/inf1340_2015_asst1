@@ -12,57 +12,25 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+ #This program prints how much money Lakshmi has after buying and selling stock, and paying her broker
+ #It then declares if she has a profit or loss, and by how much
 
-# Assign a value to the numbers of shares.
+#STILL NEED TEST CASES
+
 shares = 2000
-
-# Assign a value to the price per share.
 price = 900
-
-# Assign a value to the percentage of commission.
 percentage_of_commission = 0.03
-
-# Calculate the amount of commission by multiplying shares, price, and percentage of commission.
-# Assign the result to commission.
 commission = shares * price * percentage_of_commission
-
-# Calculate the total pay by multiplying shares and price and then add commission.
-# Assign the result to total pay.
 total_pay = shares * price + commission
-
-# Assign a value to the sold price.
 sold_price = 942.75
-
-# Calculate the amount received from the stock by multiplying shares and sold price.
-# Assign the result to amount received from the stock.
 amount_received_from_the_stock = shares * sold_price
-
-# Calculate the amount of the commission after selling the stock by multiplying percentage of commission
-# and amount received from the stock.
-# Assign the result to commission after selling the stock.
 commission_after_selling_the_stock = percentage_of_commission * amount_received_from_the_stock
-
-# Calculate the total money left by subtracting the commission after selling the stock
-# from the amount received from the stock.
-# Assign the result to money left.
 money_left = amount_received_from_the_stock - commission_after_selling_the_stock
-
-# Calculate the money remaining after the stock transaction by subtracting the total pay for the stock
-# from the amount of money left.
-# Assign the result to money remaining ater the stock transactions.
 money_remaining_after_stock_transactions = money_left - total_pay
+loss_amount = money_remaining_after_stock_transactions * -1
 
-# Display the profit or loss.
-print('Money remaining after the stock transaction is $%d') %money_remaining_after_stock_transactions
-
-# Display the loss.
-print('Because money remaining is negative, so Lakshmi has a loss $%d')%money_remaining_after_stock_transactions
-
-
-
-
-
-
-
-
-
+print("After buying and selling stock, and paying her broker both times, Lakshmi has $%d") %money_remaining_after_stock_transactions
+if money_remaining_after_stock_transactions >0:
+    print("Because the amount remaining is positive, Lakshmi has a profit of $%d") %money_remaining_after_stock_transactions
+else:
+    print("Because the amount remaining is negative, Lakshmi has a loss of $%d") %loss_amount

@@ -13,14 +13,13 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
- #For a given number of sides in a regular polygon, returns the shape name
+#This program determines shape name depending on the number of sides in a polygon
 
 #Inputs: number of sides of object (user input)
-
 #Expected Outputs: str stating input and shape name derived from input
-
 #Errors: if input: >3-10<, not an integer, no entry at all - produce error message and reprompt
 
+#STILL NEED TEST CASES
 
 shapes = ["point", "line", "open", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
 
