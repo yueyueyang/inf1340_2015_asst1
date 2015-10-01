@@ -33,5 +33,7 @@ loss_amount = money_remaining_after_stock_transactions * -1
 print("After buying and selling stock, and paying her broker both times, Lakshmi has $%d") %money_remaining_after_stock_transactions
 if money_remaining_after_stock_transactions >0:
     print("Because the amount remaining is positive, Lakshmi has a profit of $%d") %money_remaining_after_stock_transactions
+elif money_remaining_after_stock_transactions == 0:
+    print("Lakshmi broke even. She did not make a profit or suffer a loss.")
 else:
     print("Because the amount remaining is negative, Lakshmi has a loss of $%d") %loss_amount
