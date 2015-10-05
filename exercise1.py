@@ -15,8 +15,6 @@ __license__ = "MIT License"
  #This program prints how much money Lakshmi has after buying and selling stock, and paying her broker
  #It then declares if she has a profit or loss, and by how much
 
-#STILL NEED TEST CASES
-
 
 shares = 2000
 price = 900
