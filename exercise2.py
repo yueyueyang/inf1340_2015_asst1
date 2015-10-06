@@ -15,51 +15,51 @@ __license__ = "MIT License"
 
 #This program determines shape name depending on the number of sides in a polygon
 
-#Inputs: number of sides of object (user input)
+#Inputs: number of sides of object (user input) in form of int
 #Expected outputs: str stating input and shape name derived from input
 #Errors: if input: >3-10<, not an integer, no entry at all - produce error message and reprompt
 
 
 #Test1:
 #How many sides does your shape have?
-#Inputs:3
-#Expected outputs:Since your shape has 3 sides, it is a triangle!
-#Actual outputs:Since your shape has 3 sides, it is a triangle!
+#Inputs: int: 3
+#Expected outputs: str: "Since your shape has 3 sides, it is a triangle!"
+#Actual outputs: str: "Since your shape has 3 sides, it is a triangle!"
 
 
 #Test2:
 #How many sides does your shape have?
-#Inputs:five
-#Expected outputs:Sorry, I didn't catch that. Please enter a number.
-#Actural outputs:Sorry, I didn't catch that. Please enter a number.
+#Inputs: str: "five"
+#Expected outputs: str: "Sorry, I didn't catch that. Please enter a number." (reprompt)
+#Actural outputs: str: "Sorry, I didn't catch that. Please enter a number." (reprompt)
 
 
 #Test3:
 #How many sides does your shape have?
-#Inputs:2
-#Expected outputs:Error! That would not make a shape. A shape must have at least three sides.
-#Actural outputs:Error! That would not make a shape. A shape must have at least three sides.
+#Inputs: int: 2
+#Expected outputs: str: "Error! That would not make a shape. A shape must have at least three sides." (reprompt)
+#Actural outputs: str: "Error! That would not make a shape. A shape must have at least three sides." (reprompt)
 
 
 #Test4:
 #How many sides does your shape have?
-#Inputs:11
-#Expected outputs:Error! That is too many sides. Your shape must have less than 10 sides.
-#Actual outputs:Error! That is too many sides. Your shape must have less than 10 sides.
+#Inputs: int: 11
+#Expected outputs: str: "Error! That is too many sides. Your shape must have less than 10 sides." (reprompt)
+#Actual outputs: str: "Error! That is too many sides. Your shape must have less than 10 sides." (reprompt)
 
 
 #Test5:
 #How many sides does your shape have?
-#Inputs:3.5
-#Expected outputs:Sorry, I didn't catch that. Please enter a number.
-#Actual outputs:Sorry, I didn't catch that. Please enter a number.
+#Inputs: float: 3.5
+#Expected outputs: str: "Sorry, I didn't catch that. Please enter a number." (reprompt)
+#Actual outputs: str: "Sorry, I didn't catch that. Please enter a number." (reprompt)
 
 
 #Test6:
 #How many sides does your shape have?
-#Inputs:10
-#Expected outputs:Since your shape has 10 sides, it is a decagon!
-#Actual outputs:Since your shape has 10 sides, it is a decagon!
+#Inputs: int: 10
+#Expected outputs: str: "Since your shape has 10 sides, it is a decagon!"
+#Actual outputs: str: "Since your shape has 10 sides, it is a decagon!"
 
 
 shapes = ["point", "line", "open", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
@@ -68,11 +68,12 @@ def name_that_shape():
     while True:
         try:
             shape_sides = int(raw_input("How many sides does your shape have? "))
+        #make sure input is int, do not continue until it is
         except ValueError:
-            print ("Sorry, I didn't catch that. Please enter a number.")
+            print ("Sorry, I didn't catch that. Please enter a single whole number, such as 8 or 5.")
             continue
         if shape_sides < 3:
-            print ("Error! That would not make a shape. A shape must have at least three sides.")
+            print ("Error! That would not make a shape. A shape must have at least 3 sides.")
             continue
         elif 10 < shape_sides:
             print ("Error! That is too many sides. Your shape must have less than 10 sides.")

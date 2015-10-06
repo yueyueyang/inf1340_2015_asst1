@@ -15,14 +15,6 @@ __license__ = "MIT License"
  #This program prints how much money Lakshmi has after buying and selling stock, and paying her broker
  #It then declares if she has a profit or loss, and by how much
 
- #Test:
-
- #Inputs:
- #Expected outputs: After buying and selling stock, and paying her broker both times, Lakshmi has $-25065
- #Because the amount remaining is negative, Lakshmi has a loss of $25065
- #Actual outputs: After buying and selling stock, and paying her broker both times, Lakshmi has $-25065
- #Because the amount remaining is negative, Lakshmi has a loss of $25065
-
 shares = 2000
 price = 900
 percentage_of_commission = 0.03
