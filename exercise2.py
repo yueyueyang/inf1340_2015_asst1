@@ -55,7 +55,7 @@ __license__ = "MIT License"
 #Actual outputs:Sorry, I didn't catch that. Please enter a number.
 
 
-#Test 6:
+#Test6:
 #How many sides does your shape have?
 #Inputs:10
 #Expected outputs:Since your shape has 10 sides, it is a decagon!

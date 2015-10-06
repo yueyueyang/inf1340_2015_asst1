@@ -17,8 +17,8 @@ __license__ = "MIT License"
 
  #Test:
 
- #inputs:
- #expected outputs: After buying and selling stock, and paying her broker both times, Lakshmi has $-25065
+ #Inputs:
+ #Expected outputs: After buying and selling stock, and paying her broker both times, Lakshmi has $-25065
  #Because the amount remaining is negative, Lakshmi has a loss of $25065
  #Actual outputs: After buying and selling stock, and paying her broker both times, Lakshmi has $-25065
  #Because the amount remaining is negative, Lakshmi has a loss of $25065

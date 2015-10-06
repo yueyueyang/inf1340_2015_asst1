@@ -31,7 +31,7 @@ __license__ = "MIT License"
     #but i don't know how to fix it.
     # Also i didn't write the repeated begining quesitons when there was an error showed up in the output messages
     # for both excercise 2 and 3.Do you think that we need to add those beginning quesitons in the end of the tests?
-    
+
 
 #Test1:
 #We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
