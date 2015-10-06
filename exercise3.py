@@ -20,7 +20,7 @@ __license__ = "MIT License"
 
     #YUE: THIS IS WHAT I THINK WE STILL NEED TO PUT IN:
     #y/n as option: I am not sure if add y/n as an option either. In the example provided in the instruction, it uses y/n.
-    #Maybe yes/no is also okay.
+    #Maybe yes/no is also ok.
 
     #better output messages: i think providing the same output messages as the instructions showed is fine.
 
