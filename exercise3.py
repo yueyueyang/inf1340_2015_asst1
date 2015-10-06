@@ -19,6 +19,7 @@ __license__ = "MIT License"
     #Errors: if input not 'yes' or 'no', tell user it is incorrect and prompt for new, correct, answer
 
     #YUE: THIS IS WHAT I THINK WE STILL NEED TO PUT IN:
+    #y/n as option
     #better output messages
     #continue loops back to beginning - make it loop make to sub question?
 
@@ -30,41 +31,41 @@ def diagnose_car():
     raw_input("Please press the Enter/Return key when you are ready to begin.")
     while True:
         turn_key = raw_input("Is the car silent when you turn the key?")
-        if turn_key == "yes" or turn_key == "y":
+        if turn_key == "yes":
             terminals_corroded = raw_input("Are the battery terminals corroded?")
-            if terminals_corroded == "yes" or terminals_corroded == "y":
+            if terminals_corroded == "yes":
                 print ("Clean terminals and try starting again.")
                 break
-            elif terminals_corroded == "no" or terminals_corroded == "n":
+            elif terminals_corroded == "no":
                 print ("Replace cables and try again.")
                 break
             else:
                 print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
                 continue
-        elif turn_key == "no" or turn_key == "n":
+        elif turn_key == "no":
             clicking = raw_input("Does the car make a clicking noise?")
-            if clicking == "yes" or clicking == "y":
+            if clicking == "yes":
                 print("Replace the battery.")
                 break
-            elif clicking == "no" or clicking == "n":
+            elif clicking == "no":
                 crank = raw_input("Does the car crank up but fail to start?")
-                if crank == "yes" or crank == "y":
+                if crank == "yes":
                     print("Check spark plug connections.")
                     break
-                elif crank == "no" or crank == "n":
+                elif crank == "no":
                     start_die = raw_input("Does the engine start and then die?")
-                    if start_die == "yes" or start_die == "y":
+                    if start_die == "yes":
                         fuel_injection = raw_input("Does your car have fuel injection?")
-                        if fuel_injection == "yes" or fuel_injection == "y":
+                        if fuel_injection == "yes":
                             print("Check to ensure the choke is opening and closing.")
                             break
-                        elif fuel_injection == "no" or fuel_injection == "n":
+                        elif fuel_injection == "no":
                             print("Get it in for service.")
                             break
                         else:
                             print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
                             continue
-                    elif start_die == "no" or start_die == "n":
+                    elif start_die == "no":
                         print("Engine is not getting enough fuel. Clean fuel pump.")
                         break
                     else:
