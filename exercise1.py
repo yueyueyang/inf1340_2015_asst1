@@ -32,7 +32,3 @@ money_left = amount_received_from_the_stock - commission_after_selling_the_stock
 money_remaining_after_stock_transactions = money_left - total_pay
 
 print money_remaining_after_stock_transactions
-if money_remaining_after_stock_transactions > 0:
-    print "profit"
-else:
-    print "loss"

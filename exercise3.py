@@ -18,130 +18,107 @@ __license__ = "MIT License"
 # Expected Outputs: str, possible problem with car and instructions
 # Errors: if input not "Y"/"N", process finishes without producing answer
 
-#Test1:
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:Y
-#Expected outputs:Are the battery terminals corroded?
-#Actual outputs:Are the battery terminals corroded?
-#Inputs:Y
-#Expected outputs:Clean terminals and try starting again.
-#Actual outputs:Clean terminals and try starting again.
+# Test1:
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "Y"
+# Expected outputs: str: "Are the battery terminals corroded?"
+# Actual outputs: str: "Are the battery terminals corroded?"
+# Inputs: str: "Y"
+# Expected outputs: str: "Clean terminals and try starting again."
+# Actual outputs: str: "Clean terminals and try starting again."
 
 
-#Test2:
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:Y
-#Expeted outputs:Are the battery terminals corroded?
-#Actual outputs:Are the battery terminals corroded?
-#Input: N
-#Expected outputs:Replace cables and try again.
-#Actual outputs:Replace cables and try again.
+# Test2:
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "Y"
+# Expected outputs: str: "Are the battery terminals corroded?"
+# Actual outputs: str: "Are the battery terminals corroded?"
+# Input: str: "N"
+# Expected outputs: str: "Replace cables and try again."
+# Actual outputs: str: "Replace cables and try again."
 
-#Test3:
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:N
-#Expected outputs:Does the car make a clicking noise?
-#Actual outputs:Does the car make a clicking noise?
-#Inputs:Y
-#Expected outputs:Replace the battery.
-#Actual outputs:Replace the battery.
+# Test3:
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car make a clicking noise?"
+# Actual outputs: str: "Does the car make a clicking noise?"
+# Inputs: str: "Y"
+# Expected outputs: str: "Replace the battery."
+# Actual outputs: str: "Replace the battery."
 
-#Test4:
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:N
-#Expected outputs:Does the car make a clicking noise?
-#Actual outputs:Does the car make a clicking noise?
-#Inputs:N
-#Expected outputs:Does the car crank up but fail to start?
-#Acutal outputs:Does the car crank up but fail to start?
-#Inputs:Y
-#Expected outputs:Check spark plug connections.
-#Actual outputs: Check spark plug connections.
+# Test4:
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car make a clicking noise?"
+# Actual outputs: str: "Does the car make a clicking noise?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car crank up but fail to start?"
+# Actual outputs: str: "Does the car crank up but fail to start?"
+# Inputs: str: "Y"
+# Expected outputs: str: "Check spark plug connections."
+# Actual outputs: str: "Check spark plug connections."
 
-#Test5:
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:N
-#Expected outputs:Does the car make a clicking noise?
-#Actual outputs:Does the car make a clicking noise?
-#Inputs:N
-#Expected outputs:Does the car crank up but fail to start?
-#Acutal outputs:Does the car crank up but fail to start?
-#Inputs:N
-#Expected outputs:Does the engine start and then die?
-#Actual outputs:Does the engine start and then die?
-#Inputs:Y
-#Expected outputs:Does your car have fuel injection?
-#Actual outputs:Does your car have fuel injection?
-#Input:Y
-#Expected outputs:Check to ensure the choke is opening and closing.
-#Actual outputs:Check to ensure the choke is opening and closing.
+# Test5:
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car make a clicking noise?"
+# Actual outputs: str: "Does the car make a clicking noise?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car crank up but fail to start?"
+# Actual outputs: str: "Does the car crank up but fail to start?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the engine start and then die?"
+# Actual outputs: str: "Does the engine start and then die?"
+# Inputs: str: "Y"
+# Expected outputs: str: "Does your car have fuel injection?"
+# Actual outputs: str: "Does your car have fuel injection?"
+# Input: str: "Y"
+# Expected outputs: str: "Check to ensure the choke is opening and closing."
+# Actual outputs: str: "Check to ensure the choke is opening and closing."
 
-#Test6:
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:N
-#Expected outputs:Does the car make a clicking noise?
-#Actual outputs:Does the car make a clicking noise?
-#Inputs:N
-#Expected outputs:Does the car crank up but fail to start?
-#Acutal outputs:Does the car crank up but fail to start?
-#Inputs:N
-#Expected outputs:Does the engine start and then die?
-#Actual outputs:Does the engine start and then die?
-#Inputs:Y
-#Expected outputs:Does your car have fuel injection?
-#Actual outputs:Does your car have fuel injection?
-#Inputs:N
-#Expected outputs:Get it in for service.
-#Actual outputs:Get it in for service.
+# Test6:
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car make a clicking noise?"
+# Actual outputs: str: "Does the car make a clicking noise?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car crank up but fail to start?"
+# Actual outputs: str: "Does the car crank up but fail to start?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the engine start and then die?"
+# Actual outputs: str: "Does the engine start and then die?"
+# Inputs: str: "Y"
+# Expected outputs: str: "Does your car have fuel injection?"
+# Actual outputs: str: "Does your car have fuel injection?"
+# Inputs: str: "N"
+# Expected outputs: str: "Get it in for service."
+# Actual outputs: str: "Get it in for service."
 
-#Test7
-#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
-#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
-#Inputs: any key
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:N
-#Expected outputs:Does the car make a clicking noise?
-#Actual outputs:Does the car make a clicking noise?
-#Inputs:N
-#Expected outputs:Does the car crank up but fail to start?
-#Acutal outputs:Does the car crank up but fail to start?
-#Inputs:N
-#Expected outputs:Does the engine start and then die?
-#Actual outputs:Does the engine start and then die?
-#Inputs:N
-#Expected outputs:Engine is not getting enough fuel. Clean fuel pump.
-#Actual outputs:Engine is not getting enough fuel. Clean fuel pump.
+# Test7
+# We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+# Is the car silent when you turn the key?
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car make a clicking noise?"
+# Actual outputs: str: "Does the car make a clicking noise?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the car crank up but fail to start?"
+# Actual outputs: str: "Does the car crank up but fail to start?"
+# Inputs: str: "N"
+# Expected outputs: str: "Does the engine start and then die?"
+# Actual outputs: str: "Does the engine start and then die?"
+# Inputs: str: "N"
+# Expected outputs: str: "Engine is not getting enough fuel. Clean fuel pump."
+# Actual outputs: str: "Engine is not getting enough fuel. Clean fuel pump."
 
 
 def diagnose_car():
-    print("We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:")
-    # make sure user knows how to format answer to make code work
-    raw_input("Please press any key when you are ready to begin. And remember to type your answer as a capital letter!")
+#print("We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:")
     silent_when_turn_key = raw_input("Is the car silent when you turn the key?")
     if silent_when_turn_key == "Y":
         terminals_corroded = raw_input("Are the battery terminals corroded?")
@@ -162,10 +139,10 @@ def diagnose_car():
                 if engine_start_die == "Y":
                     fuel_injection = raw_input("Does your car have fuel injection?")
                     if fuel_injection == "Y":
-                        print "Check to ensure the choke is opening and closing."
-                    elif fuel_injection == "N":
                         print "Get it in for service."
+                    elif fuel_injection == "N":
+                        print "Check to ensure the choke is opening and closing."
                 elif engine_start_die == "N":
                     print "Engine is not getting enough fuel. Clean fuel pump."
 
-diagnose_car()
+#diagnose_car()

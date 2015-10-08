@@ -15,80 +15,90 @@ __license__ = "MIT License"
 
 # This program determines shape name depending on the number of sides in a polygon
 
-# Inputs: int: number of sides of object (user input)
+# Inputs: str: number of sides of object (user input)
 # Expected outputs: str stating input and shape name derived from input
 # Errors: if input <3 or >10, str "Error"
 
 # Test1:
 # How many sides does your shape have?
-# Inputs:3
-# Expected outputs:triangle
-# Actual outputs: str:triangle
+# Inputs:str "3"
+# Expected outputs: str: "triangle"
+# Actual outputs: str: "triangle"
 
 # Test2:
 # How many sides does your shape have?
-# Inputs:4
-# Expected outputs:quadrangle
-# Actual outputs:quadrangle
+# Inputs: str "4"
+# Expected outputs: str: "quadrilateral"
+# Actual outputs:str: "quadrilateral"
 
 # Test3:
 # How many sides does your shape have?
-# Inputs:5
-# Expected outputs:pentagon
-# Actual outputs:pentagon
+# Inputs: str: "5"
+# Expected outputs: str: "pentagon"
+# Actual outputs: str: "pentagon"
 
 # Test4:
 # How many sides does your shape have?
-# Inputs:6
-# Expected outputs:hexagon
-# Actual outputs:hexagon
+# Inputs: str: "6"
+# Expected outputs: str: "hexagon"
+# Actual outputs: str: "hexagon"
 
 # Test5:
 # How many sides does your shape have?
-# Inputs:7
-# Expected outputs:septagon
-# Actual outputs:septagon
+# Inputs: str: "7"
+# Expected outputs: str: "heptagon"
+# Actual outputs: str: "heptagon"
 
 # Test6:
 # How many sides does your shape have?
-# Inputs:8
-# Expected outputs:octogon
-# Actual outputs:octogon
+# Inputs: str: "8"
+# Expected outputs: str: "octogon"
+# Actual outputs: str: "octogon"
 
 # Test7:
 # How many sides does your shape have?
-# Inputs:9
-# Expected outputs:nonagon
-# Actual outputs:nonagon
+# Inputs: str: "9"
+# Expected outputs: str: "nonagon"
+# Actual outputs: str: "nonagon"
 
 # Test8:
 # How many sides does your shape have?
-# Inputs:10
-# Expected outputs:decagon
-# Actual outputs:decagon
+# Inputs: str: "10"
+# Expected outputs: str: "decagon"
+# Actual outputs: str: "decagon"
 
 # Test9:
 # How many sides does your shape have?
-# Inputs:1
-# Expected outputs:Error
-# Actual outputs:Error
+# Inputs: str: "1"
+# Expected outputs: str: "Error"
+# Actual outputs: str: "Error"
 
 # Test10:
 # How many sides does your shape have?
-# Inputs:11
-# Expected outputs:Error
-# Actual outputs:Error
-
-shapes = ["point", "line", "open", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
+# Inputs: str: "11"
+# Expected outputs: str: "Error"
+# Actual outputs: str: "Error"
 
 
 def name_that_shape():
-    shape_sides = int(raw_input("How many sides does your shape have? "))
-    if shape_sides < 3:
-        print "Error"
-    elif 10 < shape_sides:
-        print "Error"
+    shape_sides = raw_input("How many sides does your shape have? ")
+    if shape_sides == "3":
+        print "triangle"
+    elif shape_sides == "4":
+        print"quadrilateral"
+    elif shape_sides == "5":
+        print "pentagon"
+    elif shape_sides == "6":
+        print "hexagon"
+    elif shape_sides == "7":
+        print "heptagon"
+    elif shape_sides == "8":
+        print "octagon"
+    elif shape_sides == "9":
+        print "nonagon"
+    elif shape_sides == "10":
+        print "decagon"
     else:
-        print (shapes[shape_sides])
+        print "Error"
 
-name_that_shape()
+#name_that_shape()
