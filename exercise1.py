@@ -13,7 +13,12 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 # This program prints how much money Lakshmi has after buying and selling stock, and paying her broker
-# It then declares if she has a profit or loss, and by how much
+# It then prints if she has a profit or loss
+
+# Test1:
+# Inputs: share = 2000, price = 900, percentage_of_commission = 0.03, sold_price = 942.75
+# Expected outputs: float -25065.0, string "loss"
+# Actual outputs: float -25065.0, string "loss"
 
 shares = 2000
 price = 900
@@ -25,15 +30,9 @@ amount_received_from_the_stock = shares * sold_price
 commission_after_selling_the_stock = percentage_of_commission * amount_received_from_the_stock
 money_left = amount_received_from_the_stock - commission_after_selling_the_stock
 money_remaining_after_stock_transactions = money_left - total_pay
-# if there is a loss then the amount is negative, so to show how much loss is, make number positive
-loss_amount = money_remaining_after_stock_transactions * -1
 
-print "After buying and selling stock, and paying her broker both times, Lakshmi has $%d" \
-      % money_remaining_after_stock_transactions
+print money_remaining_after_stock_transactions
 if money_remaining_after_stock_transactions > 0:
-    print "Because the amount remaining is positive, Lakshmi has a profit of $%d" \
-          % money_remaining_after_stock_transactions
-elif money_remaining_after_stock_transactions == 0:
-    print "Lakshmi broke even. She did not make a profit or suffer a loss."
+    print "profit"
 else:
-    print "Because the amount remaining is negative, Lakshmi has a loss of $%d" % loss_amount
+    print "loss"

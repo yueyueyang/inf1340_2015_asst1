@@ -14,9 +14,9 @@ __license__ = "MIT License"
 
 # This program helps identify a problem with a car based on yes/no interactive queries
 
-#Inputs: str, 'yes'/'no'/'y'/'n'
-#Expected Outputs: str, possible problem with car and instructions
-#Errors: if input not 'yes'/'no'/'y'/'n', tell user it is incorrect and prompt for new, correct, answer
+# Inputs: str: "Y"/"N"
+# Expected Outputs: str, possible problem with car and instructions
+# Errors: if input not "Y"/"N", process finishes without producing answer
 
 #Test1:
 #We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:

@@ -15,9 +15,9 @@ __license__ = "MIT License"
 
 # This program determines shape name depending on the number of sides in a polygon
 
-# Inputs: number of sides of object (user input) in form of int
+# Inputs: int: number of sides of object (user input)
 # Expected outputs: str stating input and shape name derived from input
-# Errors: if input: >3-10<, not an integer, no entry at all - produce error message and re-prompt
+# Errors: if input <3 or >10, str "Error"
 
 # Test1:
 # How many sides does your shape have?
@@ -66,21 +66,12 @@ shapes = ["point", "line", "open", "triangle", "quadrangle", "pentagon", "hexago
 
 
 def name_that_shape():
-    while True:
-        try:
-            shape_sides = int(raw_input("How many sides does your shape have? "))
-        # make sure input is int, do not continue until it is
-        except ValueError:
-            print ("Sorry, I didn't catch that. Please enter a single whole number.")
-            continue
-        if shape_sides < 3:
-            print ("Error! That would not make a shape. A shape must have at least 3 sides.")
-            continue
-        elif 10 < shape_sides:
-            print ("Error! That is too many sides. Your shape must have less than 10 sides.")
-            continue
-        else:
-            print "Since your shape has %d sides, it is a %s!" %(shape_sides, shapes[shape_sides])
-            break
+    shape_sides = int(raw_input("How many sides does your shape have? "))
+    if shape_sides < 3:
+        print "Error"
+    elif 10 < shape_sides:
+        print "Error"
+    else:
+        print (shapes[shape_sides])
 
 name_that_shape()
