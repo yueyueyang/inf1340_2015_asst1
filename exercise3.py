@@ -19,193 +19,123 @@ __license__ = "MIT License"
 # Errors: if input not "Y"/"N", process finishes without producing answer
 
 #Test1:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:yes
+#Inputs:Y
 #Expected outputs:Are the battery terminals corroded?
 #Actual outputs:Are the battery terminals corroded?
-#Inputs:yes
+#Inputs:Y
 #Expected outputs:Clean terminals and try starting again.
 #Actual outputs:Clean terminals and try starting again.
 
+
 #Test2:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:yes
+#Inputs:Y
 #Expeted outputs:Are the battery terminals corroded?
 #Actual outputs:Are the battery terminals corroded?
-#Input: no
+#Input: N
 #Expected outputs:Replace cables and try again.
 #Actual outputs:Replace cables and try again.
 
 #Test3:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car make a clicking noise?
 #Actual outputs:Does the car make a clicking noise?
-#Inputs:yes
+#Inputs:Y
 #Expected outputs:Replace the battery.
 #Actual outputs:Replace the battery.
 
 #Test4:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car make a clicking noise?
 #Actual outputs:Does the car make a clicking noise?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car crank up but fail to start?
 #Acutal outputs:Does the car crank up but fail to start?
-#Inputs:yes
+#Inputs:Y
 #Expected outputs:Check spark plug connections.
 #Actual outputs: Check spark plug connections.
 
 #Test5:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car make a clicking noise?
 #Actual outputs:Does the car make a clicking noise?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car crank up but fail to start?
 #Acutal outputs:Does the car crank up but fail to start?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the engine start and then die?
 #Actual outputs:Does the engine start and then die?
-#Inputs:yes
+#Inputs:Y
 #Expected outputs:Does your car have fuel injection?
 #Actual outputs:Does your car have fuel injection?
-#Input:yes
+#Input:Y
 #Expected outputs:Check to ensure the choke is opening and closing.
 #Actual outputs:Check to ensure the choke is opening and closing.
 
 #Test6:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car make a clicking noise?
 #Actual outputs:Does the car make a clicking noise?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car crank up but fail to start?
 #Acutal outputs:Does the car crank up but fail to start?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the engine start and then die?
 #Actual outputs:Does the engine start and then die?
-#Inputs:yes
+#Inputs:Y
 #Expected outputs:Does your car have fuel injection?
 #Actual outputs:Does your car have fuel injection?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Get it in for service.
 #Actual outputs:Get it in for service.
 
 #Test7
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any key when you are ready to begin. And remember to type your answer as a capital letter!
+#Inputs: any key
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car make a clicking noise?
 #Actual outputs:Does the car make a clicking noise?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the car crank up but fail to start?
 #Acutal outputs:Does the car crank up but fail to start?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Does the engine start and then die?
 #Actual outputs:Does the engine start and then die?
-#Inputs:no
+#Inputs:N
 #Expected outputs:Engine is not getting enough fuel. Clean fuel pump.
 #Actual outputs:Engine is not getting enough fuel. Clean fuel pump.
-
-#Test8
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:y
-#Expected outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-#Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-
-#Test9
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Input:'yes'
-#Expected outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-#Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-
-
-#Test10
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:n
-#Expected outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-#Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-
-
-#Test11
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:
-#Expected outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-#Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-
-#Test12
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:yes
-#Expected outputs:Are the battery terminals corroded?
-#Actual outputs:Are the battery terminals corroded?
-#Inputs:y
-#Expected outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-#Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-
-#Test13
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
-#Inputs: Enter/Return
-#Expected outputs:Is the car silent when you turn the key?
-#Actual outputs:Is the car silent when you turn the key?
-#Inputs:no
-#Expected outputs:Does the car make a clicking noise?
-#Actual outputs:Does the car make a clicking noise?
-#Inputs:no
-#Expected outputs:Does the car crank up but fail to start?
-#Acutal outputs:Does the car crank up but fail to start?
-#Inputs:y
-#Expected outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
-#Acutal outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
 
 
 def diagnose_car():

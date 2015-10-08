@@ -21,46 +21,63 @@ __license__ = "MIT License"
 
 # Test1:
 # How many sides does your shape have?
-# Inputs: int: 3
-# Expected outputs: str: "Since your shape has 3 sides, it is a triangle!"
-# Actual outputs: str: "Since your shape has 3 sides, it is a triangle!"
+# Inputs:3
+# Expected outputs:triangle
+# Actual outputs: str:triangle
 
 # Test2:
 # How many sides does your shape have?
-# Inputs: str: "five"
-# Expected outputs: str: "Sorry, I didn't catch that. Please enter a single whole number." (re-prompt)
-# Actual outputs: str: "Sorry, I didn't catch that. Please enter a single whole number." (re-prompt)
+# Inputs:4
+# Expected outputs:quadrangle
+# Actual outputs:quadrangle
 
 # Test3:
 # How many sides does your shape have?
-# Inputs: int: 2
-# Expected outputs: str: "Error! That would not make a shape. A shape must have at least three sides." (re-prompt)
-# Actual outputs: str: "Error! That would not make a shape. A shape must have at least three sides." (re-prompt)
+# Inputs:5
+# Expected outputs:pentagon
+# Actual outputs:pentagon
 
 # Test4:
 # How many sides does your shape have?
-# Inputs: int: 11
-# Expected outputs: str: "Error! That is too many sides. Your shape must have less than 10 sides." (re-prompt)
-# Actual outputs: str: "Error! That is too many sides. Your shape must have less than 10 sides." (re-prompt)
+# Inputs:6
+# Expected outputs:hexagon
+# Actual outputs:hexagon
 
 # Test5:
 # How many sides does your shape have?
-# Inputs: float: 3.5
-# Expected outputs: str: "Sorry, I didn't catch that. Please enter a single whole number." (re-prompt)
-# Actual outputs: str: "Sorry, I didn't catch that. Please enter a single whole number." (re-prompt))
+# Inputs:7
+# Expected outputs:septagon
+# Actual outputs:septagon
 
 # Test6:
 # How many sides does your shape have?
-# Inputs: int: 10
-# Expected outputs: str: "Since your shape has 10 sides, it is a decagon!"
-# Actual outputs: str: "Since your shape has 10 sides, it is a decagon!"
+# Inputs:8
+# Expected outputs:octogon
+# Actual outputs:octogon
 
-# Test 7:
+# Test7:
 # How many sides does your shape have?
-# Inputs: none
-# Expected outputs: str: "Sorry, I didn't catch that. Please enter a single whole number." (re-prompt)
-# Actual outputs: str: "Sorry, I didn't catch that. Please enter a single whole number." (re-prompt)
+# Inputs:9
+# Expected outputs:nonagon
+# Actual outputs:nonagon
 
+# Test8:
+# How many sides does your shape have?
+# Inputs:10
+# Expected outputs:decagon
+# Actual outputs:decagon
+
+# Test9:
+# How many sides does your shape have?
+# Inputs:1
+# Expected outputs:Error
+# Actual outputs:Error
+
+# Test10:
+# How many sides does your shape have?
+# Inputs:11
+# Expected outputs:Error
+# Actual outputs:Error
 
 shapes = ["point", "line", "open", "triangle", "quadrangle", "pentagon", "hexagon", "septagon", "octogon", "nonagon", "decagon"]
 
