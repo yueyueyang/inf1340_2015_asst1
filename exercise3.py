@@ -12,30 +12,18 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-    #This program helps identify a problem with a car based on yes/now interactive queries
+    #This program helps identify a problem with a car based on yes/no interactive queries
 
-    #Inputs: str, 'yes' or 'no'
+    #Inputs: str, 'Y' or 'N'
     #Expected Outputs: str, possible problem with car and instructions
-    #Errors: if input not 'yes' or 'no', tell user it is incorrect and prompt for new, correct, answer
+    #Errors: if input not 'Y' or 'N', tell user it is incorrect and prompt for new, correct, answer
 
-    #YUE: THIS IS WHAT I THINK WE STILL NEED TO PUT IN:
-    #y/n as option: I am not sure if add y/n as an option either. In the example provided in the instruction, it uses y/n.
-    #Maybe yes/no is also ok.
 
-    #better output messages: i think providing the same output messages as the instructions showed is fine.
-
-    #In the test7, after entering the fourth no, it shows "Engine is not getting enough fuel. Clean fuel pump."
-    #I don't see there is such a scenario in the decision tree. Do you think if we need to change that part or not?
-
-    #continue loops back to beginning - make it loop make to sub question? yea, i also find this problem when doing the tests.
-    #but i don't know how to fix it.
-    # Also i didn't write the repeated begining quesitons when there was an error showed up in the output messages
-    # for both excercise 2 and 3.Do you think that we need to add those beginning quesitons in the end of the tests?
 
 
 #Test1:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -47,8 +35,8 @@ __license__ = "MIT License"
 #Actual outputs:Clean terminals and try starting again.
 
 #Test2:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -60,8 +48,8 @@ __license__ = "MIT License"
 #Actual outputs:Replace cables and try again.
 
 #Test3:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -73,8 +61,8 @@ __license__ = "MIT License"
 #Actual outputs:Replace the battery.
 
 #Test4:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -89,8 +77,8 @@ __license__ = "MIT License"
 #Actual outputs: Check spark plug connections.
 
 #Test5:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -111,8 +99,8 @@ __license__ = "MIT License"
 #Actual outputs:Check to ensure the choke is opening and closing.
 
 #Test6:
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -133,8 +121,8 @@ __license__ = "MIT License"
 #Actual outputs:Get it in for service.
 
 #Test7
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -152,8 +140,8 @@ __license__ = "MIT License"
 #Actual outputs:Engine is not getting enough fuel. Clean fuel pump.
 
 #Test8
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -162,8 +150,8 @@ __license__ = "MIT License"
 #Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
 
 #Test9
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -173,8 +161,8 @@ __license__ = "MIT License"
 
 
 #Test10
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -184,8 +172,8 @@ __license__ = "MIT License"
 
 
 #Test11
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -194,8 +182,8 @@ __license__ = "MIT License"
 #Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
 
 #Test12
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
@@ -207,8 +195,8 @@ __license__ = "MIT License"
 #Actual outputs:Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.
 
 #Test13
-#We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
-#Please press the Enter/Return key when you are ready to begin.
+#We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:
+#Please press any keys when you are ready to begin.
 #Inputs: Enter/Return
 #Expected outputs:Is the car silent when you turn the key?
 #Actual outputs:Is the car silent when you turn the key?
