@@ -12,11 +12,11 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
-    #This program helps identify a problem with a car based on yes/no interactive queries
+# This program helps identify a problem with a car based on yes/no interactive queries
 
-    #Inputs: str, 'yes'/'no'/'y'/'n'
-    #Expected Outputs: str, possible problem with car and instructions
-    #Errors: if input not 'yes'/'no'/'y'/'n', tell user it is incorrect and prompt for new, correct, answer
+#Inputs: str, 'yes'/'no'/'y'/'n'
+#Expected Outputs: str, possible problem with car and instructions
+#Errors: if input not 'yes'/'no'/'y'/'n', tell user it is incorrect and prompt for new, correct, answer
 
 #Test1:
 #We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:
@@ -209,58 +209,33 @@ __license__ = "MIT License"
 
 
 def diagnose_car():
-    print("We are going to help you trouble shoot your car! Please answer 'yes' or 'no' to the following questions:")
-    raw_input("Please press the Enter/Return key when you are ready to begin.")
-    while True:
-        turn_key = raw_input("Is the car silent when you turn the key?")
-        if turn_key == "yes" or turn_key == "y":
-            terminals_corroded = raw_input("Are the battery terminals corroded?")
-            if terminals_corroded == "yes" or terminals_corroded == "y":
-                print ("Clean terminals and try starting again.")
-                break
-            elif terminals_corroded == "no" or terminals_corroded == "n":
-                print ("Replace cables and try again.")
-                break
-            else:
-                print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
-                continue
-        elif turn_key == "no" or turn_key == "n":
-            clicking = raw_input("Does the car make a clicking noise?")
-            if clicking == "yes" or clicking == "y":
-                print("Replace the battery.")
-                break
-            elif clicking == "no" or clicking == "n":
-                crank = raw_input("Does the car crank up but fail to start?")
-                if crank == "yes" or crank == "y":
-                    print("Check spark plug connections.")
-                    break
-                elif crank == "no" or crank == "n":
-                    start_die = raw_input("Does the engine start and then die?")
-                    if start_die == "yes" or start_die == "y":
-                        fuel_injection = raw_input("Does your car have fuel injection?")
-                        if fuel_injection == "yes" or fuel_injection == "y":
-                            print("Check to ensure the choke is opening and closing.")
-                            break
-                        elif fuel_injection == "no" or fuel_injection == "n":
-                            print("Get it in for service.")
-                            break
-                        else:
-                            print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
-                            continue
-                    elif start_die == "no" or start_die == "n":
-                        print("Engine is not getting enough fuel. Clean fuel pump.")
-                        break
-                    else:
-                        print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
-                        continue
-                else:
-                    print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
-                    continue
-            else:
-                print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
-                continue
-        else:
-            print("Sorry, I didn't catch that! Please type 'yes' or 'no' for your answer.")
-            continue
+    print("We are going to help you trouble shoot your car! Please answer 'Y' or 'N' to the following questions:")
+    # make sure user knows how to format answer to make code work
+    raw_input("Please press any key when you are ready to begin. And remember to type your answer as a capital letter!")
+    silent_when_turn_key = raw_input("Is the car silent when you turn the key?")
+    if silent_when_turn_key == "Y":
+        terminals_corroded = raw_input("Are the battery terminals corroded?")
+        if terminals_corroded == "Y":
+            print "Clean terminals and try starting again."
+        elif terminals_corroded == "N":
+            print "Replace cables and try again."
+    elif silent_when_turn_key == "N":
+        clicking_noise = raw_input("Does the car make a clicking noise?")
+        if clicking_noise == "Y":
+            print "Replace the battery."
+        elif clicking_noise == "N":
+            crank_no_start = raw_input("Does the car crank up but fail to start?")
+            if crank_no_start == "Y":
+                print "Check spark plug connections."
+            elif crank_no_start == "N":
+                engine_start_die = raw_input("Does the engine start and then die?")
+                if engine_start_die == "Y":
+                    fuel_injection = raw_input("Does your car have fuel injection?")
+                    if fuel_injection == "Y":
+                        print "Check to ensure the choke is opening and closing."
+                    elif fuel_injection == "N":
+                        print "Get it in for service."
+                elif engine_start_die == "N":
+                    print "Engine is not getting enough fuel. Clean fuel pump."
 
 diagnose_car()

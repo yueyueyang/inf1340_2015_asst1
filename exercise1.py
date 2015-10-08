@@ -12,8 +12,8 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
- #This program prints how much money Lakshmi has after buying and selling stock, and paying her broker
- #It then declares if she has a profit or loss, and by how much
+# This program prints how much money Lakshmi has after buying and selling stock, and paying her broker
+# It then declares if she has a profit or loss, and by how much
 
 shares = 2000
 price = 900
@@ -25,12 +25,15 @@ amount_received_from_the_stock = shares * sold_price
 commission_after_selling_the_stock = percentage_of_commission * amount_received_from_the_stock
 money_left = amount_received_from_the_stock - commission_after_selling_the_stock
 money_remaining_after_stock_transactions = money_left - total_pay
+# if there is a loss then the amount is negative, so to show how much loss is, make number positive
 loss_amount = money_remaining_after_stock_transactions * -1
 
-print("After buying and selling stock, and paying her broker both times, Lakshmi has $%d") %money_remaining_after_stock_transactions
-if money_remaining_after_stock_transactions >0:
-    print("Because the amount remaining is positive, Lakshmi has a profit of $%d") %money_remaining_after_stock_transactions
+print "After buying and selling stock, and paying her broker both times, Lakshmi has $%d" \
+      % money_remaining_after_stock_transactions
+if money_remaining_after_stock_transactions > 0:
+    print "Because the amount remaining is positive, Lakshmi has a profit of $%d" \
+          % money_remaining_after_stock_transactions
 elif money_remaining_after_stock_transactions == 0:
-    print("Lakshmi broke even. She did not make a profit or suffer a loss.")
+    print "Lakshmi broke even. She did not make a profit or suffer a loss."
 else:
-    print("Because the amount remaining is negative, Lakshmi has a loss of $%d") %loss_amount
+    print "Because the amount remaining is negative, Lakshmi has a loss of $%d" % loss_amount
